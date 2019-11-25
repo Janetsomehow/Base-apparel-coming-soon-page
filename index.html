@@ -3,50 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+      </nav>
 
+      <main class="main">
+        <div class="main__details">
+          <img
+            class="main__details-img"
+            src="./images/hero-mobile.jpg"
+            alt=""
+          />
+          <h1 class="main__heading">
+            <span class="main__heading-colored">We're</span><br />
+            coming soon
+          </h1>
 
-  <div class="wrapper">
-    <div>
-      <img class="logo" src="images/logo.svg" alt="">
-     <h1><span>We're</span><br> Coming<br> Soon</h1>
-       
+          <p class="main__paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch details
+          </p>
 
-        <p>Hello fellow shoppers! We're currently building our new<br> fashion store. 
-        Add your email below to stay up-to-date with<br> announcements and our launch deals.</p>
-        
-        <div class="form">
-           <!--- <label for="email"><strong>E-mail</strong></label>-->
-            <input type="email" name="email" id="email" placeholder="Email Address"required>
-       <!-- <img class="icon-error" src="images/icon-error.svg" alt=""> -->
-        <button type="button" name="button"> <img src="images/icon-arrow.svg" alt=""></button>
-      </div>
+          <form class="form">
+            <input id="email" placeholder="Email Address" type="email" class="form__input" required />
+           <!--- <img
+              id="warn-icon"
+              src="./images/icon-error.svg"
+              alt=""
+              class="form__warn-icon"
+            />-->
+            <button id="btn" class="form__btn">
+              <img src="./images/icon-arrow.svg" alt="" class="form__btn-icon" />
+            </button>
+          </form>
+        <!----  <p id="warn-text" class="form__warn-text">Please enter email</p>-->
+        </div>
 
-
+        <div class="main__img-container">
+          <img src="./images/hero-desktop.jpg" alt="" class="main__img" />
+        </div>
+      </main>
     </div>
 
-    <div>
-      
-<img class="hero" src="images/hero-desktop.jpg" alt="">
-    </div>
-  </div> 
-  <!---<footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Janetsomehow</a>.
-    </p>
-  </footer> --->
+  
+  <script src="main.js"></script>
 </body>
 </html>
