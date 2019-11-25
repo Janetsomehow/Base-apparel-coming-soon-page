@@ -63,7 +63,7 @@
     margin-top: 40px;
   }
   .form__input {
-    width: 100%;
+    width: 25rem;
     font-family: inherit;
     padding: 15px 30px;
     border-radius: 100px;
@@ -75,6 +75,27 @@
     color: hsl(0, 74%, 74%);
     opacity: 0.8;
   }
+  .preText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    position: relative;
+    left: -2em;
+    font-weight: bolder;
+}
+
+.fas{
+    position: relative;
+    left: -9rem;
+    font-size: 25px;
+}
+
+ input:invalid:focus{
+   border: 2px solid red;
+ }
+
+ input:valid{
+     border: 2px solid green;
+ }
   
   .form__btn {
     position: absolute;
@@ -93,6 +114,14 @@
   .form__btn:hover {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
+  }
+  .emailSe{
+
+      /* margin: 2rem; */
+      margin-top: 2em;
+      position: relative;
+      left: 3em;
+  
   }
   /*.form__warn-icon {
     position: absolute;
