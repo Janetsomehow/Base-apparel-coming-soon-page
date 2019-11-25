@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
 
@@ -36,12 +36,26 @@
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch details
+            
           </p>
 
           <form class="form">
-            <input id="emailVal" placeholder="Email Address" type="email" class="form__input" required />
-            <!---<span class="validateIcons"></span>
-            <pre class="preText"></pre>
+            <!-- <div class="emailSe">
+              <input id="emailVal" placeholder="Email Address" type="email" class="form__input" required />
+              <span class="validateIcons">
+              </span> 
+              <pre class="preText"></pre>
+
+            </div> -->
+            <section class="emailSection">
+                
+              <!-- <label for="emailValidate">email:</label> -->
+              <input type="email" placeholder="example@domain.com" id="emailVal" class="form__input" title="Please do the right thing" required>
+              <span class="validateIcons"></span>
+              <pre class="preText"> </pre>
+          
+  
+             </section>
            <!--- <img
               id="warn-icon"
               src="./images/icon-error.svg"
